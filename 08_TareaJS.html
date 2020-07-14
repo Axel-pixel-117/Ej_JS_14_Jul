@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="es">
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <title>08_TareaJS</title>
+        <link rel="stylesheet" href="CSS/estilo.css">
+    </head>
+    <body>
+        <h1>08_TareaJS</h1>
+        <br>
+        <img src="IMG/bienes-raices.png" onclick="location.href='index.html';" id="bak">
+        <label id="bac">Índice</label>
+        <script>
+            //declaramos variables
+            var topping = prompt("Elige un topping para tu helado (sin topping, oreo, kitkat, cajeta, chocoNuez)");
+            var np = 0;
+            //usamos la condicional switch para calcular el precio del helado de acuerdo al topping elegido
+            switch(topping){
+                case "sin topping":
+                    np = 20;
+                    break;
+                case "oreo":
+                    np = 20 + 10;
+                    break;
+                case "kitkat":
+                    np = 20 + 15;
+                    break;
+                case "cajeta":
+                    np = 20 + 10;
+                    break;
+                case "chocoNuez":
+                    np = 20 + 20;
+                    break;
+                default:
+                    alert("Ingrese un topping disponible");
+            }
+            alert("El precio de su helado es: $"+np);
+        </script>
+    </body>
+</html>

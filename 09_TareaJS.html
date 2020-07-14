@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="es">
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <title>09_TareaJS</title>
+        <link rel="stylesheet" href="CSS/estilo.css">
+    </head>
+    <body>
+        <h1>09_TareaJS</h1>
+        <br>
+        <img src="IMG/bienes-raices.png" onclick="location.href='index.html';" id="bak">
+        <label id="bac">Índice</label>
+        <script>
+            do{
+                año = parseInt(prompt("Ingresa tu año de nacimiento"));
+                var msj;
+                if (año >= 1994 && año <= 2010){
+                    alert("Usted pertence a la generación Z");
+                }
+                else if(año >= 1981 && año <= 1993){
+                    alert("Usted pertence a la generación Y");
+                }
+                else if(año >= 1969 && año <= 1980){
+                    alert("Usted pertence a la generación X");
+                }
+                else if(año >= 1949 && año <= 1968){
+                    alert("Usted pertence a la generación Baby Boomer");
+                }
+                else{
+                    alert("Ingrese un año valido");
+                }
+                msj = prompt("¿Quieres seguir recibiendo información? si/no");
+            }
+            while(msj === "si");
+            </script>
+    </body>
+</html>

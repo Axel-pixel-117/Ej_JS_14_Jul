@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="es">
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <title>10_TareaJS</title>
+        <link rel="stylesheet" href="CSS/estilo.css">
+    </head>
+    <body>
+        <h1>10_TareaJS</h1>
+        <br>
+        <img src="IMG/bienes-raices.png" onclick="location.href='index.html';" id="bak">
+        <label id="bac">Índice</label>
+        <script>
+            do{
+                var msg;
+                var msj;
+                var mes;
+                msg = prompt("¿Desea usted viajar? si/no");
+                if(msg === "si"){
+                    mes = prompt("¿En qué mes desea viajar?");
+                    switch(mes){
+                        case "enero":
+                        case "febrero":
+                        case "marzo":
+                        case "abril":
+                        case "mayo":
+                        case "junio":
+                            alert("Cancún= $10,000.00\nDisneylandia= $20,000.00\nIxtapa= $8,000.00\nLas Vegas= $18,000.00");
+                            break;
+                        case "julio":
+                        case "agosto":
+                        case "septiembre":
+                        case "octubre":
+                        case "noviembre":
+                        case "diciembre":
+                            alert("Cancún= $7,000.00\nDisneylandia= $12,000.00\nIxtapa= $5,000.00\nLas Vegas= $12,000.00");
+                            break;
+                        default:
+                            alert("Mes no valido");
+                    }
+                }
+                else{
+                    alert("Ha elegido no viajar");
+                }
+            }
+            while(msg === "si");
+        </script>
+    </body>
+</html>

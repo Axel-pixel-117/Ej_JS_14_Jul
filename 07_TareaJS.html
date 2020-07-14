@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="es">
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <title>07_TareaJS</title>
+        <link rel="stylesheet" href="CSS/estilo.css">
+    </head>
+    <body>
+       <h1>07_TareaJS</h1>
+       <br>
+       <img src="IMG/bienes-raices.png" onclick="location.href='index.html';" id="bak">
+       <label id="bac">Índice</label>
+        <script>
+            //declaramos variables
+            sdo = parseInt(prompt("Ingresa tu sueldo"));
+            cat = parseInt(prompt("Ingresa tu categoria"));
+            var aumento = 0;
+            var ns = 0;
+            //iniciamos condicional switch para calcular el nuevo sueldo de acuerdo a la categoria
+            switch(cat){
+                case 1:
+                    aumento = sdo*0.15;
+                    ns = sdo + aumento;
+                    break;
+                case 2:
+                    aumento = sdo*0.10;
+                    ns = sdo + aumento;
+                    break;
+                case 3:
+                    aumento = sdo*0.08;
+                    ns = sdo + aumento;
+                    break;
+                case 4:
+                    aumento = sdo*0.07;
+                    ns = sdo + aumento;
+                    break;
+                default:
+                    alert("Ingrese una categoria valida");
+            }
+            //imprimimos el resultado de acuerdo a la categoria seleccionada y sueldo ingresado
+            alert("Su categoría es: "+cat+" y su nuevo sueldo es: $"+ns);
+        </script>
+    </body>
+</html>

@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="es">
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <title></title>
+        <link rel="stylesheet" href="CSS/estilo.css">
+    </head>
+    <body>
+      <h1>06_TareaJS</h1>
+      <br>
+      <img src="IMG/bienes-raices.png" onclick="location.href='index.html';" id="bak">
+      <label id="bac">Índice</label>
+       <script>
+           //declaramos vriables
+           var i;
+           var num = 0;
+           var suma = 0;
+           //utilizamos el ciclo for para determinar e imprimir los números pares
+        for(i=2; i<=100; i+=2){
+            alert(i+" es número par");
+            //para calcular la suma de los valores que i vaya tomando utilizamos el operador de asignacion: +=
+            suma += i;
+            //caculamos la cantidad de numeros pares dividiendo el último valor que tomó i entre 2
+            num = i/2;
+        }
+        //imprimimos los resultados de las variables suma y num
+        alert("La cantidad de numeros pares son: "+num);
+        alert("La suma de los numeros pares es: "+suma);
+       </script> 
+    </body>
+</html>
